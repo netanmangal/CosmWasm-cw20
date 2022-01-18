@@ -45,3 +45,5 @@ wasmd version
 
 source <(curl -sSL https://raw.githubusercontent.com/CosmWasm/testnets/master/sandynet-1/defaults.env)
 echo "source <(curl -sSL https://raw.githubusercontent.com/CosmWasm/testnets/master/sandynet-1/defaults.env)" >> ~/.bash_profile
+echo 'export NODE="--node $RPC"'  >> ~/.bash_profile
+echo 'export TXFLAG="${NODE} --chain-id ${CHAIN_ID} --gas-prices 0.025ubay --gas auto --gas-adjustment 1.3"' >> ~/.bash_profile
